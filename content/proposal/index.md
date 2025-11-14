@@ -72,13 +72,69 @@ Given that we will be building upon the CADASS platform, C/C++ is our selected d
 
 ## SCHEDULE
 
-| Timeline | Tasks |
-|----------|-------|
-| 11/14-11/18 | Be able to run the simulator and implement MSI coherency |
-| 11/19-11/24 | Implement OS page table and policy simulation to support cross node memory mapping |
-| 11/25-11/27 | Design and implementation of bus multiplexing with different communication latency |
-| 11/27 | **Milestone report** (Thanksgiving) |
-| 11/28-12/8 | Experiments |
-| 12/8-12/12 | GUI demonstration |
-| 12/13-12/15 | **Final project report** |
+```mermaid
+%%{init: {'theme':'neutral', 'themeVariables': {
+  'primaryColor':'#eee',
+  'primaryTextColor':'#111',
+  'primaryBorderColor':'#999',
+  'lineColor':'#666',
+  'secondaryColor':'#f4f4f4',
+  'tertiaryColor':'#ccc',
+  'background':'#ffffff',
+  'mainBkg':'#eee',
+  'secondBkg':'#f4f4f4',
+  'border1':'#999',
+  'border2':'#bbb',
+  'text':'#333',
+  'critical':'#d42',
+  'done':'#bbb',
+  'taskBkgColor':'#555',
+  'taskTextColor':'#fff',
+  'taskTextLightColor':'#fff',
+  'taskTextDarkColor':'#333',
+  'activeTaskBkgColor':'#d42',
+  'activeTaskBorderColor':'#a33',
+  'doneTaskBkgColor':'#bbb',
+  'doneTaskBorderColor':'#999',
+  'critBkgColor':'#d42',
+  'critBorderColor':'#a33',
+  'todayLineColor':'#d42',
+  'sectionBkgColor':'#f4f4f4',
+  'altSectionBkgColor':'#fff',
+  'sectionBkgColor2':'#eee',
+  'gridColor':'#ddd',
+  'fontSize':'14px',
+  'fontFamily':'"trebuchet ms", verdana, arial, sans-serif'
+}, 'gantt': {'axisFormat':'%m/%d'}}}%%
+gantt
+    title NUMA Simulator Project Timeline
+    dateFormat YYYY-MM-DD
+    axisFormat %m/%d
+    section Phase 1: Setup & Core
+    Run simulator & implement MSI coherency           :a1, 2025-11-14, 5d
+    section Phase 2: Memory Management
+    OS page table & policy simulation                 :a2, 2025-11-19, 6d
+    section Phase 3: Interconnect
+    Bus multiplexing & communication latency          :a3, 2025-11-25, 3d
+    section Milestone
+    Milestone Report (Thanksgiving)                   :milestone, m1, 2025-11-27, 1d
+    section Phase 4: Analysis
+    Experiments & benchmarking                        :a4, 2025-11-28, 11d
+    section Phase 5: Visualization
+    GUI demonstration                                 :a5, 2025-12-08, 5d
+    section Final Deliverable
+    Final Project Report                              :milestone, m2, 2025-12-13, 3d
+```
+
+### Detailed Timeline
+
+| Timeline | Tasks | Status |
+|----------|-------|--------|
+| 11/14-11/18 | Run simulator & implement MSI coherency | 🔄 In Progress |
+| 11/19-11/24 | OS page table & policy simulation | ⏳ |
+| 11/25-11/27 | Bus multiplexing & communication latency | ⏳ |
+| **11/27** | **🎯 Milestone Report** (Thanksgiving) | ⏳ |
+| 11/28-12/8 | Experiments & benchmarking | ⏳ |
+| 12/8-12/12 | GUI demonstration | ⏳ |
+| **12/13-12/15** | **🎯 Final Project Report** | ⏳ |
 

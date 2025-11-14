@@ -6,6 +6,7 @@ theme = "PaperMod"
 [params]
   description = "A NUMA simulator (15-418 project)"
   author = "Helen Wang, Yupei Tian"
+  mermaid = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -23,7 +24,7 @@ theme = "PaperMod"
   [[menu.main]]
     identifier = "proposal"
     name = "Project Proposal"
-    url = "/15418-proj/proposal/"
+    url = "/proposal/"
     weight = 10
 
 [outputs]
@@ -36,3 +37,7 @@ theme = "PaperMod"
   [markup.highlight]
     style = "monokai"
     lineNos = false
+
+# Enable Mermaid diagrams
+[params.assets]
+  disableFingerprinting = false
