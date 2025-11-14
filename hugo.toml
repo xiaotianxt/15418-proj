@@ -1,4 +1,4 @@
-baseURL = "https://xiaotianxt.github.io/proj/"
+baseURL = "https://xiaotianxt.github.io/15418-proj/"
 languageCode = "en-us"
 title = "NUMA Simulator Project"
 theme = "PaperMod"
@@ -15,14 +15,6 @@ theme = "PaperMod"
   ShowToc = true
   TocOpen = true
 
-[params.homeInfoParams]
-  Title = "NUMA Simulator"
-  Content = """
-  A project exploring Non-uniform memory access (NUMA) architecture through simulation.
-  
-  We are implementing a NUMA simulator to measure memory access latency under different interconnect network policies and page assignments.
-  """
-
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/xiaotianxt/15418-proj"
@@ -31,13 +23,16 @@ theme = "PaperMod"
   [[menu.main]]
     identifier = "proposal"
     name = "Project Proposal"
-    url = "/proposal/"
+    url = "/15418-proj/proposal/"
     weight = 10
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
     style = "monokai"
     lineNos = false
